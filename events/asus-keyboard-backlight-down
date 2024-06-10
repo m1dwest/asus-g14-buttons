@@ -1,0 +1,2 @@
+event=button/kbdillumdown KBILLUMDOWN 00000080 00000000 K
+action=/etc/acpi/actions/g14-keyboard-backlight.sh prev
