@@ -10,3 +10,7 @@ Copy all the directories to `/etc/acpi`. Don't forget to check for and remove an
 # Pass all events to our one handler script
 event=.*
 ```
+After making any changes to the /etc/acpi/events directory, the acpid.service needs to be restarted:
+``` bash
+systemctl restart acpid.service
+```
