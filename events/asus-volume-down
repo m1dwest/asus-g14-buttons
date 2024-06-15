@@ -1,2 +1,2 @@
 event=button/volumedown VOLDN 00000080 00000000 K
-action=/etc/acpi/actions/asus-volume.sh -5
+action=/etc/acpi/actions/asus-volume.sh -5 false

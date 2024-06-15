@@ -1,2 +1,2 @@
 event=button/kbdillumup KBILLUMUP 00000080 00000000 K
-action=/etc/acpi/actions/asus-keyboard-backlight.sh next
+action=/etc/acpi/actions/asus-keyboard-backlight.sh next false

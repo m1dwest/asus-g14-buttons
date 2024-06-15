@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
-re='^[-+]?[0-9]+$'
-if ! [[ $1 =~ $re ]]; then
-    echo "Error: Not a number" >&2
-    exit 1
-fi
+source $(dirname $0)/utils.sh
 
-sudo -u midwest XDG_RUNTIME_DIR=/run/user/1000 pactl set-sink-volume @DEFAULT_SINK@ $1%
+function apply() {
+    sudo -u midwest XDG_RUNTIME_DIR=/run/user/1000 pactl set-sink-volume @DEFAULT_SINK@ $value%
+}
+
+value=$1
+
+check_if_signed_number $value
+apply $value
+
+if [ "$is_notify" == "true" ]; then
+fi

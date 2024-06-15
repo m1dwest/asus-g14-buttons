@@ -1,2 +1,2 @@
 event=video/brightnessdown BRTDN 00000087 00000000 K
-action=/etc/acpi/actions/asus-brightness.sh -40
+action=/etc/acpi/actions/asus-brightness.sh -40 false

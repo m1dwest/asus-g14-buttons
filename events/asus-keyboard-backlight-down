@@ -1,2 +1,2 @@
 event=button/kbdillumdown KBILLUMDOWN 00000080 00000000 K
-action=/etc/acpi/actions/asus-keyboard-backlight.sh prev
+action=/etc/acpi/actions/asus-keyboard-backlight.sh prev false
